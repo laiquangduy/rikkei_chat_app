@@ -1,0 +1,49 @@
+.container1{
+    text-align: center;
+}
+.img1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 999px;
+}
+
+.form{
+    border: 1px solid #D7DFE2 ;
+    border-radius: 5px;
+    width: 280px;
+    display: inline-block;
+    padding: 10px;
+}
+.input1{
+    width: 250px;
+    margin: 5px;
+    padding: 5px;
+}
+.font1{
+    float: left;
+    font-size: small;
+}
+.button1{
+    color: white;
+    background-color: #960001;
+    border: none;
+    width: 260px;
+    height: 30px;
+    margin: 5px;
+}
+.ahaa{
+    border: 1px solid #D7DFE2 ;
+    border-radius: 5px;
+    width: 280px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+   
+}
+#server-error-message{
+    color: red;
+}
+#server-success-message{
+    color: rgb(47, 255, 47);
+}

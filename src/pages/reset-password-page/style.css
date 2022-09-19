@@ -1,0 +1,43 @@
+
+.container2{
+    text-align: center;
+}
+
+.img2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 999px;
+}
+.form{
+    border: 1px solid #D7DFE2;
+    width: 280px;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+.ahaa1{
+    border:1px solid #D7DFE2 ;
+    border-radius: 5px;
+    width: 280px;
+    padding: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.font2{
+    float: left;
+    font-size: small;
+}
+.input2{
+    width: 260px;
+    margin: 5px;
+    padding: 5px;
+}
+.button2{
+    color: white;
+    background-color:#960001 ;
+    border: none;
+    width: 272px;
+    padding: 5px;
+    margin: 5px;
+}

@@ -1,0 +1,61 @@
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 999px;
+}
+form {
+    border: 1px solid #D7DFE2;
+    width: 280px;
+    border-radius: 5px;
+    padding: 10px;
+    
+    margin: auto;
+}
+
+.font{
+    font-size: small;
+}
+.container .container-2 {
+    text-align: center;
+    
+}
+.container .create{
+    border:1px solid #D7DFE2 ;
+    border-radius: 5px;
+    width: 280px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+.container .forget{
+    width: 280px;
+    margin: auto;
+    /* float: right; */
+    font-size: small;
+    margin-top: 10px;
+}
+.container .forget .forget-1{
+    float: right;
+}
+.button {
+    width: 272px;
+    padding: 5px;
+    background-color: #960001;
+    color: white;
+    border: none;
+    margin: 5px;
+    
+}
+.input1 {
+    width: 260px;
+    padding: 5px;
+    margin: 5px;
+    
+}
+.create{
+    cursor: pointer;
+}
+.forget-1{
+    cursor: pointer;
+}
