@@ -5,6 +5,15 @@ import { chatPage } from "../pages/chat-page/index";
 import { validateLoginInfo, validateRegisterPage } from "../controller/index";
 import { validateResetPage } from "../controller/index";
 import { signIn } from "../model";
+import swal from "sweetalert";
+export let alertSuccess = (message) => {
+  return swal({
+    title: "Thành công",
+    text: message,
+    icon: "success",
+    button: "OK",
+  });
+};
 
 export let setActiveScreen = (screenName) => {
   const app = document.getElementById("app");
@@ -48,11 +57,16 @@ export let setActiveScreen = (screenName) => {
       if (app) {
         app.innerHTML = registerPage;
       }
+      // const loadingr = document.getElementById("loading");
+      // loadingr.onclick = function () {
+      //   loadingRun("loading", "on");
+      // };
       const registerForm = document.getElementById("register-form");
       if (registerForm) {
         console.log(registerForm);
         registerForm.addEventListener("submit", (event) => {
           event.preventDefault();
+
           const firstname = registerForm.firstname.value;
           const lastname = registerForm.lastname.value;
           const email1 = registerForm.email1.value;
@@ -60,6 +74,7 @@ export let setActiveScreen = (screenName) => {
           const password2 = registerForm.password2.value;
 
           // console.log(firstname);
+          // loadingRun("loading", "on");
           validateRegisterPage(
             firstname,
             lastname,
@@ -109,3 +124,28 @@ export let renderErrorMessage = (id, text) => {
     errorMessage.innerText = text;
   }
 };
+
+export let loadingRun = (text) => {
+  const loadingIcon = document.getElementById("loading");
+  if (text == true) {
+    loadingIcon.style.display = "block";
+  } else if (text == false) {
+    loadingIcon.style.display = "none";
+  }
+};
+
+// export let loading = (loading) => {
+//   let loadingRun = document.getElementById("loading");
+//   loadingRun.style.display = loading;
+// };
+
+// Git status (Kiểm tra trạng thái của file)
+// (unstage) và Staging)
+// git stage . (Đẩy file vừa được chỉnh sửa vào trạng thái staging)
+
+// Git commit -m "Message"
+// Đẩy file vào trạng thái commit trước khi được push lên remote repo
+
+// Git push origin [tên nhánh](master)
+// Đẩy file lên remote repo tại nhánh master
+//

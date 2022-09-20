@@ -1,5 +1,6 @@
 import "./style.css";
 import img1 from "../login-page/img/images.png";
+import img2 from "../login-page/img/loading-1.gif";
 export let registerPage = /*html*/ `<div class="container1">
 <div>
   <img src="${img1}" alt="" class="img1" />
@@ -50,7 +51,10 @@ export let registerPage = /*html*/ `<div class="container1">
   <div class="font1">Confirm Password</div>
   <input type="password" class="input1" placeholder="Confirm password" name="password2"/>
   <div id="password2"></div>
-  <button class="button1">Register</button>
+  <button class="button1" id="button1">Register</button>
 </form>
 <div><div class="ahaa" id="login-page">Already have an account? Login here</div></div>
+<div id="loading">
+  <img src="${img2}" alt="" class="img-2" />
+</div>;
 </div>`;

@@ -15,6 +15,7 @@ export let resetPassword = /*html*/ `<div class="container2">
   />
   <div id ="email5"></div>
   <button class="button2">Reset Password</button>
+  <div id="server-error-message"></div>
 </form>
 <div><div class="ahaa1" id="login-page-1">Already have an account? Login here</div></div>
 </div>`;

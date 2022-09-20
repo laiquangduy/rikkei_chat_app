@@ -1,8 +1,9 @@
 // import { resetPassword } from "../pages/reset-password-page"
 import { renderErrorMessage } from "../view";
+import { loadingRun } from "../view";
 // import {createNewUser, loginUser} from
 // import {createNewUser, loginUser} from
-import { createNewUser } from "../model";
+import { createNewUser, resetPassword } from "../model";
 import { signInWithEmailAndPassword } from "../model";
 
 export let validateLoginInfo = (email, password) => {
@@ -84,5 +85,8 @@ export let validateResetPage = (email) => {
     renderErrorMessage("email5", "Invalid email");
   } else {
     renderErrorMessage("email5", "");
+  }
+  if (email) {
+    resetPassword(email);
   }
 };

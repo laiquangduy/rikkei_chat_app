@@ -47,3 +47,11 @@
 #server-success-message{
     color: rgb(47, 255, 47);
 }
+.img-2{
+    position: absolute;
+    top:40%;
+    left: 40%;
+}
+#loading {
+    display: none;
+}
